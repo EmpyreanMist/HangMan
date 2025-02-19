@@ -1,5 +1,6 @@
 html,
 body {
+  padding: 0;
   margin: 0;
   height: 100%;
 }
@@ -16,18 +17,166 @@ header {
 
 #button-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 20%;
 }
 
 #button-container button {
-  width: 2%;
-  height: 2rem;
+  width: 3rem; /* Increased width */
+  height: 3rem; /* Increased height */
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem; /* Increased font size */
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#button-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#start-game-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }
 
 #start-game {
   display: flex;
-  align-self: center;
-  justify-self: center;
-  margin-bottom: 5%;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 12rem; /* Increased width */
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#start-game:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+#word-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.word-letter {
+  background-color: grey;
+  border: 1px solid black;
+  width: 3rem; /* Increased width */
+  height: 3rem; /* Increased height */
+  margin: 0.2rem;
+}
+
+.correct-guess {
+  background-color: green;
+}
+
+.incorrect-guess {
+  background-color: red !important;
+}
+
+#win-lose-text {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+#score {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  #button-container {
+    margin-top: 10%;
+  }
+
+  #button-container button {
+    width: 2.5rem; /* Increased width */
+    height: 2.5rem; /* Increased height */
+    font-size: 1rem; /* Increased font size */
+  }
+
+  #start-game {
+    width: 10rem; /* Increased width */
+    font-size: 1.2rem;
+  }
+
+  #word-container {
+    flex-wrap: wrap;
+  }
+
+  .word-letter {
+    width: 2.5rem; /* Increased width */
+    height: 2.5rem; /* Increased height */
+    margin: 0.1rem;
+  }
+
+  #win-lose-text {
+    font-size: 20px;
+  }
+
+  #score {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #button-container {
+    margin-top: 5%;
+  }
+
+  #button-container button {
+    width: 2rem; /* Increased width */
+    height: 2rem; /* Increased height */
+    font-size: 0.8rem; /* Increased font size */
+  }
+
+  #start-game {
+    width: 8rem; /* Increased width */
+    font-size: 1rem;
+  }
+
+  #word-container {
+    flex-wrap: wrap;
+  }
+
+  .word-letter {
+    width: 2rem; /* Increased width */
+    height: 2rem; /* Increased height */
+    margin: 0.1rem;
+  }
+
+  #win-lose-text {
+    font-size: 18px;
+  }
+
+  #score {
+    font-size: 18px;
+  }
 }

@@ -11,13 +11,17 @@
   <body>
     <header>
       <h1>Hangman Game</h1>
-      <h1>♥️♥️♥️♥️♥️</h1>
+      <h1 id="lives-display"></h1>
       <h1 id="score">Score: 0</h1>
     </header>
 
-    <p id="word-Display">asdpok</p>
+    <div id="word-container"></div>
 
-    <button id="start-game">Start Game</button>
+    <div id="start-game-container">
+      <button id="start-game">Start Game</button>
+    </div>
+
+    <p id="win-lose-text"></p>
 
     <div id="button-container">
       <button>A</button>
@@ -31,7 +35,7 @@
       <button>I</button>
       <button>J</button>
       <button>K</button>
-      <button>l</button>
+      <button>L</button>
       <button>M</button>
       <button>N</button>
       <button>O</button>
