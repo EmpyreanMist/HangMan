@@ -75,6 +75,7 @@ function handleGuess(letter, button) {
         wordLetters[i].classList.add('correct-guess');
       }
     }
+    button.classList.add('correct-guess-button');
   } else {
     // Incorrect guess
     console.log('Incorrect guess:', letter);

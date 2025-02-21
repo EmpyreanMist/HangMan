@@ -180,3 +180,7 @@ header {
     font-size: 18px;
   }
 }
+
+.correct-guess-button {
+  background-color: green !important;
+}
