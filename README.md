@@ -1,1 +1,2 @@
 # Simple hangman game.
+Test
